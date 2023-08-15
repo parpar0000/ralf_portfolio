@@ -28,7 +28,7 @@ body {
 /******Header****/
 
 .container {
-  max-width: 1350px;
+  max-width: 1500px;
   padding: 0 75px;
   margin: auto;
 }
@@ -43,7 +43,7 @@ body {
 
 .navbar .logo {
   font-family: Poppins, sans-serif;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 700;
   color: var(--text-color);
 }
@@ -95,3 +95,84 @@ nav ul li:after {
 }
 
 /******** Hero Section *******/
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 2.5rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  height: 85vh;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-main {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  justify-content: center;
+  position: relative;
+}
+
+.here-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  position: relative;
+}
+
+.hero-text h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--light-color);
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--text-color);
+  line-height: 1.3;
+  margin: 15px 0;
+}
+
+.hero-text p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--para-color);
+  line-height: 1.3;
+  font-family: "Mulish", sans-serif;
+  margin: 15px 0;
+}
+
+.hero .hero-image img {
+  margin-top: 20px;
+  width: 370px;
+  height: 370px;
+  background-position: 50%;
+  border: 3px solid white;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  position: relative;
+  box-shadow: 0 0 35px rgba(213, 121, 255, 0.67);
+  animation: ralf23 8s ease-in-out infinite;
+}
+
+@keyframes ralf23 {
+0% {
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
+
+50% {
+  border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+}
+
+100% {
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
+
+}
