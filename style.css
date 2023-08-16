@@ -96,7 +96,6 @@ nav ul li:after {
 
 /******** Hero Section *******/
 
-<<<<<<< HEAD
 .hero {
   display: flex;
   align-items: center;
@@ -121,7 +120,7 @@ nav ul li:after {
   position: relative;
 }
 
-.here-text {
+.hero-text {
   display: flex;
   flex-direction: column;
   max-width: 50rem;
@@ -207,8 +206,41 @@ nav ul li:after {
 
 .buttons .btn2:hover {
   background: var(--main-color);
-  border: 2px transparent;
+  border: 2px solid transparent;
 }
-=======
   
->>>>>>> master
+/*********Tech Skills Logos*********/
+
+.skillss {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--para-color);
+}
+
+.skillss p {
+  border-right: 2px solid var(--text-color);
+  color: var(--para-color);
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 4rem;
+  padding-right: 2rem;
+
+}
+
+.skillss ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  margin-top: 10px;
+}
+
+.skillss ul li img {
+  width: 35px;
+  height: auto;
+  cursor: pointer;
+}
