@@ -176,3 +176,35 @@ nav ul li:after {
 }
 
 }
+
+/******** Hero-Buttons*********/
+
+.buttons {
+  margin: 20px 0;
+}
+
+.buttons button {
+  padding: 10px 15px;
+  background-color: var(--main-color);
+  box-shadow: 0 0 10px var(--main-color);
+  color: var(--text-color);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.buttons button:hover {
+  background: transparent;
+  border: 2px solid var(--main-color);
+}
+
+.buttons .btn2 {
+  margin: 0 20px;
+  background: transparent;
+  border: 2px solid var(--main-color);
+}
+
+.buttons .btn2:hover {
+  background: var(--main-color);
+  border: 2px transparent;
+}
