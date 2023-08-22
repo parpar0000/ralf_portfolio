@@ -17,14 +17,20 @@
       <div class="navbar">
         <div class="logo">Ralf D.</div>
         <nav class="rightnav">
-          <ul>
+          <ul class="nav-links" id="menuItems">
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Services">Services</a></li>
             <li><a href="#Contact">Contact</a></li>
           </ul>
-        </nav>
+        </nav>  
+        <!----- close & open button ---->
+        <div class="menu-icon" onclick="menuToggle()">
+          <img class="hamburger-icon" src="images/icons/hamburger.png" alt="hamburger" width="25px">
+          <img class="close-icon" src="images/icons/close.png" alt="close" width="22px">
+        </div>
       </div>
+
 
     <!-------- Hero Section ---------->
         <div class="hero">
@@ -61,7 +67,14 @@
           </div>
         </div>
       </div>
+      <!------ javaScript-------->
 
+      <script>
+        const menuItems = document.getElementById("menuItems");
+        const hamburgerImg = document.querySelector(".hamberger-icon");
+        const closeImg = document.querySelector(".close-icon");
+
+      </script>
 
 </body>
 </html>
