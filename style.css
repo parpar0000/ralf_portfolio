@@ -297,14 +297,15 @@ nav ul li:after {
 
 /********* Responsive header *************/
 
-.menu-icon
+.menu-icon,
 .close-icon {
-
+  display: none;
 }
 
 @media (max-width: 775px) {
-  .menu-icon {
 
+  .menu-icon {
+    display: block;
 
   }
 
@@ -317,6 +318,8 @@ nav ul li:after {
     background: var(--text-color);
     width: 100%;
     z-index: 1;
+    overflow: hidden;
+    transition: all 0.5s;
 
   }
 
@@ -330,5 +333,52 @@ nav ul li:after {
     padding: 0;
   }
 
+  .hero .hero-image img {
+    width: 260px;
+    height: 260px;
+    transition: all 0.7s ease-in-out;
 
+  }
+
+  .buttons button {
+    padding: 5px 8px;
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .logo {
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .hero .hero-image img {
+    width: 180px;
+    height: 180px;
+    transition: all 0.7s ease-in-out;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .hero-text p {
+    font-size: 0.8rem;
+  }
+
+  .buttons .btn2 {
+    margin-left: 5px;
+
+  }
+
+  .skillss ul {
+    gap: 1rem;
+  }
+
+  .skillss ul li img {
+    width: 25px;
+    height: auto;
+  }
 }

@@ -17,7 +17,7 @@
       <div class="navbar">
         <div class="logo">Ralf D.</div>
         <nav class="rightnav">
-          <ul class="nav-links" id="menuItems">
+          <ul class="nav-links" id="MenuItems">
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Services">Services</a></li>
@@ -66,13 +66,29 @@
                 </div>
           </div>
         </div>
-      </div>
+    </div>
       <!------ javaScript-------->
 
       <script>
-        const menuItems = document.getElementById("menuItems");
-        const hamburgerImg = document.querySelector(".hamberger-icon");
-        const closeImg = document.querySelector(".close-icon");
+        var menuItems = document.getElementById("MenuItems");
+        var hamburgerImg = document.querySelector(".hamburger-icon");
+        var closeImg = document.querySelector(".close-icon");
+
+        menuItems.style.maxHeight = "0px";
+
+        function menuToggle() {
+          if(menuItems.style.maxHeight == "0px") {
+            menuItems.style.maxHeight = "200px";
+            hamburgerImg.style.display = "none";
+            closeImg.style.display = "inline-block"
+          } else {
+            menuItems.style.maxHeight = "0px";
+            hamburgerImg.style.display = "inline-block";
+            closeImg.style.display = "none"
+
+          }
+          
+        }
 
       </script>
 
