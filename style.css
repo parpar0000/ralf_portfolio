@@ -16,9 +16,9 @@
   --bg-light-color: #303036;
   --text-color: #f9f9f9;
   --para-color: #9c9c9c;
-  --main-color: #8f43ee;
-  --light-color: #b37df5;
-  --extra-light: #cea5ff;
+  --main-color: #4387ee; /***#8f43ee**/
+  --light-color: #74a5f0; /***#b37df5**/
+  --extra-light: #9bc3ff; /***#cea5ff**/
 }
 
 body {
@@ -158,7 +158,7 @@ nav ul li:after {
   border: 3px solid white;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   position: relative;
-  box-shadow: 0 0 35px rgba(213, 121, 255, 0.67);
+  box-shadow: 0 0 35px rgba(121, 146, 255, 0.67); /**rgba(213, 121, 255, 0.67)**/
   animation: ralf23 8s ease-in-out infinite;
 }
 
