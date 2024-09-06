@@ -92,7 +92,7 @@ nav ul li:after {
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
-}
+} 
 
 /******** Hero Section *******/
 
@@ -398,6 +398,13 @@ nav ul li:after {
 .about .about-img img {
   margin-top: 45px;
   width: 18rem;
-  height: 19.5rem;
+  height: auto;
+  display: inline-block;
+}
+
+.about .about-content .heading {
+  font-size: 3rem;
+  color: var(--main-color);
+  padding-bottom: 10px;
 }
 
