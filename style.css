@@ -19,6 +19,7 @@
   --main-color: #4387ee; /***#8f43ee**/
   --light-color: #74a5f0; /***#b37df5**/
   --extra-light: #9bc3ff; /***#cea5ff**/
+  --white-text: #ffff;
 }
 
 body {
@@ -388,23 +389,212 @@ nav ul li:after {
 
 .about {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row; /* Ensure content is displayed in a row */
+  justify-content: center; /* Align content horizontally */
+  align-items: flex-start; /* Align items to the top */
   gap: 3.2rem;
-  padding: 7rem 15%;
+  padding: 5rem 15%;
   background-color: var(--bg-light-color);
 }
 
-.about .about-img img {
-  margin-top: 45px;
+.section-title {
+  font-size: 2.5rem;
+  color: var(--white-text);
+  margin-bottom: 20px;
+  text-align: left; /* Align title text to the left */
+  flex-basis: 100%; /* Ensure the title takes up full width */
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.section-title-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-title-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  flex-direction: row; /* Keep in a row */
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+
+
+.about-content {
+  max-width: 600px; /* Constrain the width of the content for better readability */
+  text-align: justify;
+  color: var(--white-text);
+}
+
+.about-img {
+  margin-top: 0;
+}
+
+.about-img img {
   width: 18rem;
   height: auto;
-  display: inline-block;
+  display: block;
 }
 
-.about .about-content .heading {
-  font-size: 3rem;
-  color: var(--main-color);
-  padding-bottom: 10px;
+/* Skill Bar */
+
+.about .skill-container {
+  margin-top: 20px;
 }
 
+.about .skills1 {
+  width: 100%;
+}
+
+.about .skill-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white-text);
+  margin: 7px 0;
+  text-transform: uppercase;
+}
+
+.about .skill-bar {
+  height: 12px;
+  background: var(--para-color);
+  border-radius: 2px;
+}
+
+.about .skill-per {
+  height: 12px;
+  background: var(--main-color);
+  border-radius: 2px;
+  position: relative;
+}
+
+.about .skill-per::before {
+  content: attr(per);
+  padding: 4px 6px;
+  background: var(--white-text);
+  border-radius: 4px;
+  font-size: 12px;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.about .skill-per::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: var(--white-text);
+  border-radius: 2px;
+  position: absolute;
+  top: -15px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+}
+
+/* *****About Responsive****** */
+
+@media(max-width:900px) {
+    .about {
+    flex-direction: column;
+    padding: 6rem 40px;
+    }
+
+    .about-content {
+      width: 100%;
+      text-align: justify;
+    }
+
+    .about .about-img img {
+      width: 15rem;
+      height: auto;
+    }
+
+}
+
+/* **** Portfolio **** */
+
+.portfolio h2 {
+  text-align: center;
+  padding: 2rem;
+  color: var(--white-text);
+}
+
+.portfolio-box img {
+  width: 100%;
+  height: 100%; 
+  transition: .5s ease;
+}
+
+.portfolio-box img:hover {
+  transform: scale(1.1);
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  grid-gap: 30px;
+  padding: 3rem 75px 7rem 75px;
+}
+
+.portfolio-layer h4 {
+  font-size: 1.8rem;
+  color: var(--white-text);
+}
+
+.portfolio-layer p {
+  font-size: 1rem;
+  color: var(--white-text);
+  margin: 3rem 0 1rem;
+}
+
+.portfolio-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  color: var(--bg-light-color);
+}   
+
+.portfolio-container .portfolio-box {
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid var(--para-color);
+  box-shadow: 0 0 5px var(--para-color);
+  overflow: hidden;
+}
+
+.portfolio-box .portfolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 4rem;
+  transform: translateX(-100%);
+  transition: 0.5s ease;
+
+}
+
+.portfolio-box:hover .portfolio-layer {
+  transform: translateX(0);
+}
