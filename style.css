@@ -525,8 +525,10 @@ nav ul li:after {
 
 .portfolio h2 {
   text-align: center;
-  padding: 2rem;
+  padding: 3rem;
   color: var(--white-text);
+  font-size: 2.5rem;
+  margin-top: 2rem;
 }
 
 .portfolio-box img {
@@ -597,4 +599,11 @@ nav ul li:after {
 
 .portfolio-box:hover .portfolio-layer {
   transform: translateX(0);
+}
+
+@media (max-width: 450px) {
+  .portfolio-container {
+    grid-template-columns: repeat(auto-fit, minmax(200, 1fr));
+    padding: 3rem 45px 7rem 45px;
+  }
 }
