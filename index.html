@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ralf D Duhaylungsod</title>
+  <title>Ralf D. Duhaylungsod</title>
 
   <link rel="stylesheet" href="style.css">
 
   <!---font awsome link-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
   <!--Header-->
@@ -18,10 +20,11 @@
         <div class="logo">Ralf D.</div>
         <nav class="rightnav">
           <ul class="nav-links" id="menuItems">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#js-about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>  
         <!----- close & open button ---->
@@ -37,7 +40,7 @@
             <div class="hero-main">
               <div class="hero-text">
                 <h2>Hello, I am Ralf Diez Duhaylungsod &#128521;</h2>
-                <h1>Web Developer, Designer, IT Support</h1>
+                <h1>Web Developer, SEO Specialist, IT Consultant</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet unde aut rem officia ipsa cupiditate maiores fugit quos molestiae? Doloremque provident praesentium nemo, 
                   perspiciatis atque ad necessitatibus in officia!</p>
                   <div class="buttons">
@@ -141,7 +144,7 @@
 
       <!-- Services -->
 
-      <div class="services">
+      <div class="services" id="services">
         <h2>Services</h2>
         <div class="services-container">
 
@@ -153,13 +156,13 @@
 
           <div class="services-box">
             <i class="fa-solid fa-pen-to-square"></i>
-            <h3>Branding</h3>
+            <h3>SEO Specialist</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           </div>
 
           <div class="services-box">
-            <i class="fa-solid fa-palette"></i>
-            <h3>Graphic Design</h3>
+            <i class="fa-solid fa-user"></i>
+            <h3>IT Consultant</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           </div>
         </div>  
@@ -228,8 +231,64 @@
         </div>
       </div>
 
-      
+      <!-- Contact Form -->
+
+      <div class="contact-form-container" id="contact">
+          <h2 class="heading">Contact Me</h2>
+
+          <form action="">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" size="30" required>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+
+      </div>
+
+      <footer>
+        <div class="footer">
+          <p>Copyright &copy;<a href="#"> Ralf D.</a></p>
+
+          <ul>
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+          </ul>
+
+          
+
+          <div class="footer-menu">
+            
+            <ul class="socials">
+
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
     
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+    
+                <li>
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+    
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+    
+            </ul>
+
+          </div>
+
+        </div>
+      </footer>
+
+
 
 
       <!------ javaScript-------->
