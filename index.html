@@ -11,12 +11,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="script/jquery-3.7.1.js"></script>
 </head>
 <body>
   <!--Header-->
 
   <div class="container">
-      <div class="navbar">
+      <div class="navbar" id="navbar">
         <div class="logo">Ralf D.</div>
         <nav class="rightnav">
           <ul class="nav-links" id="menuItems">
@@ -45,7 +46,7 @@
                   perspiciatis atque ad necessitatibus in officia!</p>
                   <div class="buttons">
                     <button class="btn1">Download CV</button>
-                    <button class="btn2">Contact me</button>
+                    <button class="btn2"><a href="#contact">Contact me</a></button>
                   </div>
               </div>
               <div class="hero-image">
@@ -149,22 +150,32 @@
         <div class="services-container">
 
           <div class="services-box">
-            <i class="fa-solid fa-code"></i>
-            <h3>Web Development</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <img src="images/web-dev.jpg" alt="">
+            <div class="services-layer">
+              <i class="fa-solid fa-code"></i>
+              <h3>Web Development</h3>
+              <p>A professional website that will turn to ROI. </p>
+            </div>
           </div>
 
           <div class="services-box">
-            <i class="fa-solid fa-pen-to-square"></i>
-            <h3>SEO Specialist</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <img src="images/SEO.jpeg" alt="">
+            <div class="services-layer">
+              <i class="fa-solid fa-pen-to-square"></i>
+              <h3>SEO Specialist</h3>
+              <p>Our goal is to be at the top of Google search results, with a White Hat SEO Strategy. </p>
+            </div>
           </div>
 
           <div class="services-box">
-            <i class="fa-solid fa-user"></i>
-            <h3>IT Consultant</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <img src="images/it-con.jpg" alt="">
+            <div class="services-layer">
+              <i class="fa-solid fa-user"></i>
+              <h3>IT Consultant</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           </div>
+            </div>
+            
         </div>  
       </div>
       
@@ -184,7 +195,7 @@
             </div>
 
             <div class="portfolio-box">
-              <img src="images/project2.jpeg" alt="pro2">
+              <img src="images/project1.jpeg" alt="pro2">
               <div class="portfolio-layer">
                 <h4>Web Design</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nostrum maxime harum, quod provident at eius placeat maiores autem sed dignissimos assumenda reprehenderit neque quaerat nihil mollitia repellat, accusamus asperiores.</p>
@@ -193,7 +204,7 @@
             </div>
 
             <div class="portfolio-box">
-              <img src="images/project3.jpeg" alt="pro3">
+              <img src="images/project1.jpeg" alt="pro3">
               <div class="portfolio-layer">
                 <h4>Web Design</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nostrum maxime harum, quod provident at eius placeat maiores autem sed dignissimos assumenda reprehenderit neque quaerat nihil mollitia repellat, accusamus asperiores.</p>
@@ -202,7 +213,7 @@
             </div>
 
             <div class="portfolio-box">
-              <img src="images/project4.jpeg" alt="pro4">
+              <img src="images/project1.jpeg" alt="pro4">
               <div class="portfolio-layer">
                 <h4>Web Design</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nostrum maxime harum, quod provident at eius placeat maiores autem sed dignissimos assumenda reprehenderit neque quaerat nihil mollitia repellat, accusamus asperiores.</p>
@@ -211,7 +222,7 @@
             </div>
 
             <div class="portfolio-box">
-              <img src="images/project5.jpeg" alt="pro5">
+              <img src="images/project1.jpeg" alt="pro5">
               <div class="portfolio-layer">
                 <h4>Web Design</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nostrum maxime harum, quod provident at eius placeat maiores autem sed dignissimos assumenda reprehenderit neque quaerat nihil mollitia repellat, accusamus asperiores.</p>
@@ -220,7 +231,7 @@
             </div>
 
             <div class="portfolio-box">
-              <img src="images/project6.jpeg" alt="pro6">
+              <img src="images/project1.jpeg" alt="pro6">
               <div class="portfolio-layer">
                 <h4>Web Design</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nostrum maxime harum, quod provident at eius placeat maiores autem sed dignissimos assumenda reprehenderit neque quaerat nihil mollitia repellat, accusamus asperiores.</p>
@@ -294,6 +305,7 @@
       <!------ javaScript-------->
 
       <script src="script/script.js"></script>
+      <script src="script/jscript.js"></script>
 
 </body>
 </html>
