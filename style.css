@@ -248,7 +248,7 @@ nav ul li:after {
   border: 2px solid transparent;
 }
 
-.buttons .btn2 a {
+.buttons .btn2 a, .buttons .btn1 a {
   color: var(--text-color);
   text-decoration: none;
 }
@@ -468,7 +468,9 @@ nav ul li:after {
   flex-direction: row; /* Keep in a row */
   justify-content: center;
   align-items: center;
-  gap: 3.2rem;
+  gap: 3rem;
+  padding: 5rem 15%;
+  background-color: var(--bg-light-color);
 }
 
 
