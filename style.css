@@ -770,7 +770,7 @@ nav ul li:after {
 
 .contact-form-container {
   text-align: center;
-  padding: 0 260px 7rem;
+  padding: 4rem 4rem;
 }
 
 .contact-form-container h2 {
@@ -822,10 +822,36 @@ border: 2px solid transparent;
   color: var(--main-color);
 }
 
+.contact-form-container .contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.contact-form-container .contact-container .calendly {
+  flex: 1 60%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  
+}
+
 @media (max-width:990px) {
   .contact-form-container {
     padding: 0 20px 7rem;
   } 
+
+  .contact-form-container .contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  gap: 3rem;
+  }
 
 }
 
